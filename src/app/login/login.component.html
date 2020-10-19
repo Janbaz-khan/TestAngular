@@ -1,0 +1,15 @@
+<h3>Add User</h3>
+<hr>
+
+
+<form #form="ngForm" class="form-horzontal pt-1" (submit)="OnSubmit(form)">
+    <div class="form-group col-md-6">
+        <input type="email" name="username" placeholder="Email Addess" #username="ngModel" ngModel class="form-control"/>
+    </div>
+    <div class="form-group col-md-6">
+        <input type="password" name="password" placeholder="Password" #password="ngModel" ngModel class="form-control"/>
+    </div>
+    <div class="form-group col-md-6">
+        <input type="submit"  class="btn btn-primary" value="Submit" />
+    </div>
+</form>

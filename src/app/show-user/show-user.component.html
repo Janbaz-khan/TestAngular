@@ -1,0 +1,16 @@
+<h3>Users</h3>
+<hr>
+<button class="btn btn-success" (click)="NavigateToAddUser()">Add new</button>
+<br>  <br>
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Password</th>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{user.Name}}</td>
+      <td>{{user.Email}}</td>
+      <td>{{user.Password}}</td>
+  </tr>
+</table>
